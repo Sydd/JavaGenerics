@@ -33,6 +33,7 @@ public class Pila<T> {
        Nodo actual = Head.getSiguiente();
 
        Nodo anterior = Head;
+
        if (anterior == null)
            return "La lista esta vacia.";
 
@@ -50,9 +51,11 @@ public class Pila<T> {
 
                 if (actual.getSiguiente() != null){
                     anterior.setSiguiente(actual.siguiente);
+
                 }
                 return "se borro el objeto!";
             } else {
+                anterior = actual;
                 actual = actual.getSiguiente();
             }
         }

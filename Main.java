@@ -74,7 +74,7 @@ public class Main {
         System.out.println(pilaPersonas.Push(per5));
 
         System.out.println(pilaPersonas.Size());
-        pilaPersonas.Remove(per2);
+        System.out.println( pilaPersonas.Remove(per4));
         System.out.println(pilaPersonas.Size());
 
     }
